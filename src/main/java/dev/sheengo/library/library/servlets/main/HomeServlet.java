@@ -13,7 +13,7 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         BookDAO bookDAO = BookDAO.getInstance();
         request.setAttribute("books", bookDAO.findAll());
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/home.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.html");
         requestDispatcher.forward(request, response);
     }
 
