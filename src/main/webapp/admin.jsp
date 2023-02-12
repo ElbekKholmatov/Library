@@ -5,7 +5,7 @@
 <head>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
-    <%--    <jsp:include page="/fragments/css.jsp"/>--%>
+<%--    <jsp:include page="/fragments/css.jsp"/>--%>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -214,6 +214,11 @@
             color: #a1a1a1;
             padding: 5px 10px;
         }
+
+        .black {
+            background-color: #1a1d20;
+        }
+
         .search-bar {
             width: 100px;
             height: 20px;
@@ -224,7 +229,10 @@
             border: none;
             outline: none;
             margin-right: 30px;
+
+
         }
+
         .trns-text {
             background: url("/resources/img/main-bg.jpg") -20px -20px no-repeat;
             -webkit-text-fill-color: transparent;
@@ -254,12 +262,22 @@
                 </c:forEach>
             </datalist>
         </div>
+        <div class="navbar">
+            <a href="/login">Login</a>
+        </div>
+        <div class="navbar">
+            <a href="/category">Categories</a>
+        </div>
+        <div class="navbar">
+            <a href="/book">Books</a>
+        </div>
     </header>
 </head>
 <body>
 <main>
     <div class="intro">
-        <h1 class="trns-text">Welcome ${user.getUsername()}</h1>
+        <h1 class="trns-text">Welcome to Admin Page</h1>
+
     </div>
 </main>
 <footer class="footer">
@@ -269,7 +287,8 @@
             <a href="#"><i class="fa fa-facebook">Facebook</i></a>
             <a href="#"><i class="fa fa-twitter">Twitter</i></a>
             <a href="#"><i class="fa fa-instagram">Instagram</i></a>
-            <a href="#"><i class="fa fa-telegram">Telegram</i></a>
+            <a href="#"><i class=71)
+		at dev.sheengo.library.library.servlets.category.CategoryUpdateServlet.doGet(Cate"fa fa-telegram">Telegram</i></a>
         </div>
         <div class="links">
             <span>Support</span>

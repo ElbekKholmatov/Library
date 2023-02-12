@@ -1,0 +1,24 @@
+body {
+    background-color: #f5cccb !important;
+}
+
+.books_list {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+}
+.card{
+    margin: 10px;
+    width: 30%;
+}
+
+.book_title{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.book_author{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-style: italic;
+}
